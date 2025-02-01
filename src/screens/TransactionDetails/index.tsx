@@ -103,21 +103,24 @@ const DetailsScreen = (): React.JSX.Element => {
   };
 
   return (
-    <SafeAreaView style={styles.safeAreaContainer}>
+    <View style={styles.mainView}>
+      <SafeAreaView />
       <VarText size="large" style={styles.pageTitle}>
         Transaction Details
       </VarText>
-      <ScrollView contentContainerStyle={styles.contentContainer}>
-        {renderHeaderIcon()}
-        {renderTransactionDetails()}
-        {renderShareButton()}
+      <ScrollView>
+        <View style={styles.contentContainer}>
+          {renderHeaderIcon()}
+          {renderTransactionDetails()}
+          {renderShareButton()}
+        </View>
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  safeAreaContainer: {
+  mainView: {
     flex: 1,
   },
   pageTitle: {
@@ -125,7 +128,6 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     flex: 1,
-    marginTop: 20,
     marginHorizontal: 20,
     marginBottom: 20,
   },
@@ -163,7 +165,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 20,
+    marginBottom: 10,
   },
   shareButtonText: {
     color: '#fff',

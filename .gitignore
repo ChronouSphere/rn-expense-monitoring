@@ -1,6 +1,18 @@
 node_modules
 .DS_store
 
+# Android
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
 # iOS
 ios/Pods
 ios/ExpenseMonitoring.xcodeproj
