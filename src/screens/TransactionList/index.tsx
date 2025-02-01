@@ -171,13 +171,11 @@ const ListingScreen = (): React.JSX.Element => {
 
   return (
     <SafeAreaView style={styles.safeAreaContainer}>
-      <View>
-        <VarText size="large" style={styles.pageTitle}>
-          Transaction List
-        </VarText>
-        {loading && renderSkeletalLoading()}
-        {transactionList.length > 0 && renderTransactionList(transactionList)}
-      </View>
+      <VarText size="large" style={styles.pageTitle}>
+        Transaction List
+      </VarText>
+      {loading && renderSkeletalLoading()}
+      {transactionList.length > 0 && renderTransactionList(transactionList)}
     </SafeAreaView>
   );
 };
