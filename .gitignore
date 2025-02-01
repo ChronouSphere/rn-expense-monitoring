@@ -1,0 +1,8 @@
+node_modules
+.DS_store
+
+# iOS
+ios/Pods
+ios/ExpenseMonitoring.xcodeproj
+ios/xcode.env.local
+ios/build
