@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import transactionList from './transactionListReducer';
+import transactionReducer from './transactionReducer';
 
 const rootReducer = combineReducers({
-  transactionList,
+  transactionReducer,
 });
 
 export default rootReducer;

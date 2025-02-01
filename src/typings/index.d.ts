@@ -1,7 +1,7 @@
 declare namespace TransactionModule {
   namespace Action {
     interface RequestFetchSuccess {
-      transactionList: TransactionList[];
+      transactionList: Transaction[];
     }
     export interface ReduxAction<T = any> {
       type: string;
@@ -9,17 +9,21 @@ declare namespace TransactionModule {
     }
   }
 
-  interface TransactionList {
+  interface Transaction {
     refId: string;
     transferDate: string;
     recipientName: string;
     transferName: string;
     amount: number;
+    description: string;
+    isExpenditure: boolean;
   }
 
   declare namespace State {
     interface AppState {
-      transactionList: TransactionList[] | [];
+      transactionReducer: {
+        transactionList: Transaction[];
+      };
     }
   }
 }
