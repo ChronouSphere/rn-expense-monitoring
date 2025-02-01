@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/HostGrotesk-Bold.ttf",
+      "sha1": "14bd8dc7f432723d9fc5e70047c81ee50d66d444"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-BoldItalic.ttf",
+      "sha1": "1b830c13fc2bbe4dc791cc4d46c2eb6368e9a267"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-ExtraBold.ttf",
+      "sha1": "23e5cc4a301c4f4adb8f14fd73892339acad5a94"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-ExtraBoldItalic.ttf",
+      "sha1": "881612efef23e7745ff4397db9c87370bf3e5840"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-Italic.ttf",
+      "sha1": "fbad14b3f2d2749639c2a44b34f6190b9b2c1018"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-Light.ttf",
+      "sha1": "d90170ffcca16e2d482a00c2ef71caba1608ff61"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-LightItalic.ttf",
+      "sha1": "31d87b6073012a431967814468e027436a97b34f"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-Medium.ttf",
+      "sha1": "ac6f6d134cb3a5d0812933a651f9623f3059cc57"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-MediumItalic.ttf",
+      "sha1": "6ba58a266b8ece3e412e3326ecfd30226fcd9984"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-Regular.ttf",
+      "sha1": "62a14a9a70ddfe3a4a1ec37f2157204623b01c74"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-SemiBold.ttf",
+      "sha1": "65e886e0827aeea9acb15db00f05c8b8415ad0cf"
+    },
+    {
+      "path": "assets/fonts/HostGrotesk-SemiBoldItalic.ttf",
+      "sha1": "f320417c389064dcdbacb5dc420b5f055d611515"
+    }
+  ]
+}
