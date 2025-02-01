@@ -18,7 +18,7 @@ This App is tested on both iOS and Android Platform
 
 ### iOS
 
-Run Pod install on iOS (Ruby)
+Execute Pod install on iOS, and run app through XCode 
 
 ```sh
 cd ios && pod install
@@ -34,7 +34,7 @@ Run the app through Android studio
 
 | Tool/Platform | Version |
 |---|---|
-| Xcode | v16.1 |
+| XCode | v16.1 |
 | Android Studio | v2024.2.2 |
 | React Native | 0.77 |
 | Node.js | 22.12.0 (using nvm) |
