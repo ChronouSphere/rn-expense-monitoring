@@ -1,7 +1,8 @@
 import {all, call, put, take} from 'redux-saga/effects';
 import {transactionListAction} from '../actions/transactionListActions';
 import transactionApi from '../../api/transactionApi';
-import {Alert, Share, ShareAction} from 'react-native';
+import {Share, ShareAction} from 'react-native';
+import {generateTransactionDetailsMessage} from '../../util/commonUtil';
 
 function* fetchTransactionListRuntime() {
   while (true) {
@@ -32,29 +33,7 @@ function* shareTransactionDetailsRuntime() {
 
     try {
       const transactionItem: TransactionModule.Transaction = action.payload;
-
-      const message = `
-        Transaction Details:
-        Reference Number: ${transactionItem.refId}
-        Transfer Date: ${new Date(
-          transactionItem.transferDate,
-        ).toLocaleDateString('en-MY', {
-          year: 'numeric',
-          month: 'short',
-          day: 'numeric',
-        })} ${new Date(transactionItem.transferDate).toLocaleTimeString(
-        'en-MY',
-        {hour: 'numeric', minute: 'numeric', hour12: true},
-      )}
-        Recipient Name: ${transactionItem.recipientName}
-        Transfer Name: ${transactionItem.transferName}
-        Amount: ${
-          transactionItem.isExpenditure
-            ? `-MYR${transactionItem.amount.toFixed(2)}`
-            : `MYR${transactionItem.amount.toFixed(2)}`
-        }
-        Description: ${transactionItem.description || 'N/A'}
-      `;
+      const message = generateTransactionDetailsMessage(transactionItem);
 
       const result: ShareAction = yield Share.share({
         message: message,

@@ -107,7 +107,7 @@ const DetailsScreen = (): React.JSX.Element => {
       <VarText size="large" style={styles.pageTitle}>
         Transaction Details
       </VarText>
-      <ScrollView style={styles.contentContainer}>
+      <ScrollView contentContainerStyle={styles.contentContainer}>
         {renderHeaderIcon()}
         {renderTransactionDetails()}
         {renderShareButton()}
@@ -119,7 +119,6 @@ const DetailsScreen = (): React.JSX.Element => {
 const styles = StyleSheet.create({
   safeAreaContainer: {
     flex: 1,
-    marginHorizontal: 20,
   },
   pageTitle: {
     textAlign: 'center',
@@ -127,6 +126,8 @@ const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
     marginTop: 20,
+    marginHorizontal: 20,
+    marginBottom: 20,
   },
   headerContainer: {
     flexDirection: 'row',
@@ -162,6 +163,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 20,
   },
   shareButtonText: {
     color: '#fff',
