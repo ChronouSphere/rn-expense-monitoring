@@ -15,6 +15,5 @@ local.properties
 
 # iOS
 ios/Pods
-ios/ExpenseMonitoring.xcodeproj
 ios/xcode.env.local
 ios/build
