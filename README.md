@@ -26,7 +26,7 @@ cd ios && pod install
 
 ### Android
 
-Run the app through Android studio ()
+Run the app through Android studio
 
 ## Step 4: Have fun !
 
