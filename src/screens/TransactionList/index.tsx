@@ -16,12 +16,7 @@ import {
   ArrowDownToDot,
   ChevronRight,
 } from 'lucide-react-native';
-import {
-  incomingTransactionsAmountSelector,
-  outgoingTransactionsAmountSelector,
-  totalBalanceSelector,
-  transactionListSelector,
-} from '../../redux/selectors/transactionListSelectors';
+import {transactionListSelector} from '../../redux/selectors/transactionListSelectors';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../../../App';
@@ -31,9 +26,6 @@ const ListingScreen = (): React.JSX.Element => {
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const transactionList = useSelector(transactionListSelector);
-  const incomingAmount = useSelector(incomingTransactionsAmountSelector);
-  const outgoingAmount = useSelector(outgoingTransactionsAmountSelector);
-  const totalBalance = useSelector(totalBalanceSelector);
   const dispatch = useDispatch();
 
   useEffect(() => {
